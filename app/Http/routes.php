@@ -19,7 +19,7 @@ Route::get('/', function () {
     ]);
 });
 
-Route::post('/task', function(Request $request){
+Route::post('/tasks', function(Request $request){
 	$validator = validator::make($request->all(),[
 		'name' => 'required|max:255',
 	]);
